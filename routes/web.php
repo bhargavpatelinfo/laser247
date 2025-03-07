@@ -121,9 +121,6 @@ Route::name("dashboard.")->prefix("/dashboard")->middleware(["auth"])->group(fun
         Route::get("/social-media/{id}/status", [SocialMediaController::class, "status"])->name("social.media.status");
         Route::delete("/social-media/{id}/delete", [SocialMediaController::class, "delete"])->name("social.media.delete");
         // site menu
-        Route::get("/menus/header", [MenuController::class, "header"])->name("menus.header");
-        Route::post("/menus/header", [MenuController::class, "headerUpdate"])->name("menus.header.update");
-        Route::get("/menus/footer", [MenuController::class, "footer"])->name("menus.footer");
-        Route::post("/menus/footer", [MenuController::class, "footerUpdate"])->name("menus.footer.update");
+     
     });
 });

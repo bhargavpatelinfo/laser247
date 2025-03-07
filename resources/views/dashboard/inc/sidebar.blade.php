@@ -173,8 +173,8 @@
                     </ul>
                 </li> -->
                 @endif
-                <li class="nav-item {{ in_array(request()->route()->getName(), ["dashboard.settings.password", "dashboard.settings.menus.footer", "dashboard.settings.menus.header", "dashboard.settings.site", "dashboard.settings.profile","dashboard.settings.social.media"]) ? "menu-open" : "" }}">
-                    <a href="#" class="nav-link {{ in_array(request()->route()->getName(), ["dashboard.settings.password", "dashboard.settings.menus.footer", "dashboard.settings.menus.header", "dashboard.settings.site", "dashboard.settings.profile", "dashboard.settings.social.media"]) ? "active" : "" }}">
+                <li class="nav-item {{ in_array(request()->route()->getName(), ["dashboard.settings.password", "dashboard.settings.site", "dashboard.settings.profile","dashboard.settings.social.media"]) ? "menu-open" : "" }}">
+                    <a href="#" class="nav-link {{ in_array(request()->route()->getName(), ["dashboard.settings.password", "dashboard.settings.menus.footer", "dashboard.settings.site", "dashboard.settings.profile", "dashboard.settings.social.media"]) ? "active" : "" }}">
                         <i class="nav-icon fas fa-cog"></i>
                         <p>Settings<i class="right fas fa-angle-left"></i>
                         </p>
@@ -205,29 +205,7 @@
                                 <p>Social Media</p>
                             </a>
                         </li>
-                        <li class="nav-item {{ in_array(request()->route()->getName(), ["dashboard.settings.menus.header", "dashboard.settings.menus.footer"]) ? "menu-open" : "" }}">
-                            <a href="#" class="nav-link {{ in_array(request()->route()->getName(), ["dashboard.settings.menus.header", "dashboard.settings.menus.footer"]) ? "active" : "" }}">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>
-                                    Menus
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="{{ route("dashboard.settings.menus.header") }}" class="nav-link {{ request()->route()->getName() == "dashboard.settings.menus.header" ? "active" : "" }}">
-                                        <i class="far fa-dot-circle nav-icon"></i>
-                                        <p>Header Menu</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="{{ route("dashboard.settings.menus.footer") }}" class="nav-link {{ request()->route()->getName() == "dashboard.settings.menus.footer" ? "active" : "" }}">
-                                        <i class="far fa-dot-circle nav-icon"></i>
-                                        <p>Footer Menu</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
+                 
                         @endif
                     </ul>
                 </li>

@@ -26,6 +26,7 @@
 
 @section("content")
 
+@include('frontend.home.inc.header')
 @include('frontend.home.inc.hero')
 @include('frontend.home.inc.images')
 @include('frontend.home.inc.details')
@@ -33,6 +34,6 @@
 @include('frontend.home.inc.features')
 @include('frontend.home.inc.faqSection')
 @include('frontend.home.inc.games')
-
+@include('frontend.home.inc.footer')
 
 @endsection
