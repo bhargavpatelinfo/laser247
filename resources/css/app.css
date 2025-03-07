@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+ @apply font-JosefinSans
+}
+ :root{
+    --yellow-orange: #FFBD21;
+    --golden: #bf8c13;
+ }
+@layer utilities {
+.basic-transition {
+    @apply transition ease-linear duration-300;
+  } 
+}
+
+
+.heroimage{
+    animation:imageanimation 1s ease-in-out infinite alternate; 
+}
+
+ @keyframes imageanimation {
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(20px,0);
+    }
+ }
+
+
+ .heroBackgroundimage{
+    animation:backgroundimageanimation 1s ease-in-out infinite alternate; 
+}
+
+ @keyframes backgroundimageanimation {
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(-10px,10px);
+    }
+ }
+
+ html{
+    scroll-padding:100px ;
+ }
