@@ -15,18 +15,6 @@
 
 ## Installation
 
-- Clone this repository
-```
-git clone https://github.com/alsayeedar/oredoo-laravel-blog-project.git
-```
-- Change directory
-```
-cd oredoo-laravel-blog-project
-```
-- Copy .env.example file
-```
-cp .env.example .env
-```
 - Install composer
 ```
 composer i
