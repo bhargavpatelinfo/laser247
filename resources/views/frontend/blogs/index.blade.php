@@ -26,11 +26,12 @@
 
 
 @section("content")
-<div class="bg-black pt-20 pb-12">
+@include('frontend.home.inc.header')
+<div class="">
     <div class="container mx-auto px-4 ">
         <h2 class="text-3xl font-bold text-center text-white my-8">Blogs</h2>
         
-        <div class="max-w-[1230px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="max-w-[1230px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-[100px]">
             @forelse ($blogs as $post)
             <div class="bg-white  overflow-hidden transition hover:shadow-xl p-5">
                 <a href="{{ route('frontend.post', $post->slug) }}">
@@ -57,6 +58,7 @@
             @endforelse
         </div>
    
+        @include('frontend.home.inc.footer')
     </div>
 </div>
 @endsection

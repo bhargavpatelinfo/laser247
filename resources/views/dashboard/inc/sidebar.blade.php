@@ -99,13 +99,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ route("dashboard.categories.index") }}" class="nav-link {{ request()->route()->getName() == "dashboard.categories.index" ? "active" : "" }}">
+                            <a href="{{ route("dashboard.categories.index")}}" class="nav-link {{ request()->route()->getName() == "dashboard.categories.index" ? "active" : "" }}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>All Categories</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route("dashboard.categories.create") }}" class="nav-link {{ request()->route()->getName() == "dashboard.categories.create" ? "active" : "" }}">
+                            <a href="{{ route("dashboard.categories.create")}}" class="nav-link {{ request()->route()->getName() == "dashboard.categories.create" ? "active" : "" }}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>New Category</p>
                             </a>

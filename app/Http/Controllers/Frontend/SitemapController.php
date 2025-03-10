@@ -16,6 +16,16 @@ class SitemapController extends Controller
                 'lastmod' => now()->toAtomString(),
                 'priority' => '1.0'
             ],
+            [
+                'loc' => url('/privacy-policy'),
+                'lastmod' => now()->toAtomString(),
+                'priority' => '0.5'
+            ],
+            [
+                'loc' => url('/terms-and-conditions'),
+                'lastmod' => now()->toAtomString(),
+                'priority' => '0.5'
+            ],
         ];
 
         $blogs = Post::latest()->get();

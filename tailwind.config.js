@@ -7,6 +7,10 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage:{
+        headerGradient:"linear-gradient(50deg,#063F9C 65% , #01BAEE 100%)",
+        navGradient:"linear-gradient(50deg,#063F9C 0%,#01BAEE 100%)"
+      },
       colors:{
         yellowOrange: "var(--yellow-orange)",
         golden:"var(--golden)"
@@ -46,7 +50,8 @@ export default {
       "4xl": "1920px"
     },
     fontFamily:{
-      JosefinSans:["Josefin Sans","sans-serif"]
+      JosefinSans:["Josefin Sans","sans-serif"],
+      Roboto:["Roboto","sans-serif"]
     }
   },
   plugins: [],

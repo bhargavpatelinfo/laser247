@@ -33,7 +33,8 @@
 @include('frontend.home.inc.gameImagesSection')
 @include('frontend.home.inc.features')
 @include('frontend.home.inc.faqSection')
-@include('frontend.home.inc.games')
+<!-- Here we will fetch the posts and categories -->
+@include('frontend.home.inc.blog-games')
 @include('frontend.home.inc.footer')
 
 @endsection

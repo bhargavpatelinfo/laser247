@@ -21,10 +21,12 @@ use App\Http\Controllers\Frontend\CommentController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\PageController;
 use App\Http\Controllers\Frontend\PostController;
+use App\Http\Controllers\Frontend\PrivacyPolicyController;
 use App\Http\Controllers\Frontend\SearchController;
 use App\Http\Controllers\Frontend\TagController;
 use App\Http\Controllers\Frontend\UserController;
 use App\Http\Controllers\Frontend\SitemapController;
+use App\Http\Controllers\Frontend\TermsAndConditionsController;
 use Illuminate\Support\Facades\Route;
 
 Route::name("frontend.")->group(function() {
@@ -39,6 +41,10 @@ Route::name("frontend.")->group(function() {
     Route::get("/tag/{name}", [TagController::class, "index"])->name("tag");
     Route::get("/page/{slug}", [PageController::class, "index"])->name("page");
     Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name("sitemap");
+    Route::get('/terms-and-conditions', [TermsAndConditionsController::class, 'show'])->name('frontend.terms-and-conditions');
+    Route::get('/privacy-policy', [PrivacyPolicyController::class, 'show'])->name('frontend.privacy-policy');
+    
+   
 });
 
 Route::name("auth.")->group(function() {

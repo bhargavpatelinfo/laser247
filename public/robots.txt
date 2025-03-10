@@ -1,3 +1,2 @@
 User-agent: *
 Disallow:
-Route::get('/sitemap.xml', [SitemapController::class, 'index']);
